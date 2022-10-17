@@ -1,4 +1,6 @@
-node ('nodes') {
+@Library('shared_libs')  _
+
+node  {
 
 try {
 
