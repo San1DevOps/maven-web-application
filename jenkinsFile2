@@ -1,8 +1,10 @@
 pipeline{
 
- agent any 
+ agent {
+  label ('Nodes')
+ }
  
-tools {
+ tools {
   maven 'maven3.8.6'
 }
 
@@ -49,7 +51,7 @@ steps {
 sh "mvn deploy"
 }
 } //stage closing 
-/*
+
 stage ('Deploying the application to Tomcat') {
 
 steps {
@@ -60,7 +62,7 @@ sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@17
 }
 }  //steps closing 
 } //stage closing 
-*/
+
 
 } //stages closing 
 
