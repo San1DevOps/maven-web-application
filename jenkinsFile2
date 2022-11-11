@@ -52,6 +52,7 @@ sh "mvn deploy"
 }
 } //stage closing 
 
+/*
 stage ('Deploying the application to Tomcat') {
 
 steps {
@@ -62,7 +63,7 @@ sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@17
 }
 }  //steps closing 
 } //stage closing 
-
+*/
 
 } //stages closing 
 
